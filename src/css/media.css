@@ -1,0 +1,105 @@
+@media screen and (max-width: 1200px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 992px) {
+  body header .header-form input,
+  body header .header-form button {
+    margin: 0;
+  }
+  body .tours .tours-wrapp .tours--wrapp-items {
+    max-width: 76.78%;
+  }
+  body .tours .tours-wrapp .tours-items--item .tours-items--item-info {
+    width: 97.5%;
+    padding: .5rem 0;
+  }
+  body .advantage .wrapp-adv .advantage-items .advantage-item {
+    position: static;
+  }
+  body .services .card .card-body .card-title {
+    font-size: 1.2em;
+  }
+  body .services .card .card-body .card-text {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 13px;
+  }
+  body header .header-title h1 {
+    font-size: 3.5em;
+  }
+  body header .header-description {
+    margin: 5rem 0;
+  }
+  body header .header-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  body header .header-form form input,
+  body header .header-form form button {
+    margin: 0.5rem 0;
+  }
+  body header .header-contact-container {
+    margin: 5rem 0;
+  }
+  body header .header-contact-container .logo {
+    text-align: center;
+    margin: 3rem 0;
+  }
+  body header .header-contact-container .connection {
+    text-align: center;
+  }
+  body .tours .tours-wrapp .tours-items--item .tours-items--item-info {
+    width: 97.5%;
+    padding: .3rem 0;
+    font-size: .8em;
+  }
+  body .footer .footer-info {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  body .footer .footer-social {
+    margin: 2rem 0 1rem 0;
+  }
+  body .footer .footer-social a img {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  body {
+    font-size: 12px;
+  }
+  body header .header-title h1 {
+    font-size: 2.5em;
+  }
+  body .tours .tours-desktop {
+    display: none;
+  }
+  body .tours .tours-wrapp .tours--wrapp-items {
+    max-width: 100%;
+  }
+  body .tours .tours-wrapp .tours-items--item .tours-items--item-info {
+    width: 99%;
+    padding: .5rem 0;
+  }
+  body .tours .tours-wrapp .tours-items--item .tours-items--item-info h4 {
+    font-size: 3em;
+  }
+  body .tours .tours-wrapp .tours-items--item .tours-items--item-info p {
+    font-size: 1.2em;
+  }
+  body .advantage .advantage-title h2 {
+    font-size: 2em;
+  }
+  body .faq .faq-wrapp {
+    margin: 4rem 0;
+  }
+  body .faq .faq-wrapp #accordion .card .btn-link {
+    font-size: 1.2em;
+  }
+}

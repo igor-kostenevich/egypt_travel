@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+
+@primary-color-text: #ffffff;
+@secondary-color-text: #000000;
+@btn-primary-color: #FFBB00;
+@placeholder-color-form: #C4C4C4;
+
+.bg-img(@num, @src) {
+    background:
+        linear-gradient(rgba(0, 0, 0, @num)),
+        url(@src) center center no-repeat;
+    background-size: cover;
+}
+
+:active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+.btn-group>.btn,
+.btn-group-vertical>.btn {
+    outline: none;
+}
+
+
+.img-thumbnail {
+    border: 0;
+}
+
+.wrapper {
+    overflow-x: hidden;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 16px;
+
+    header {
+        .bg-img(0.3, '../../build/img/22-min.jpg');
+        padding-bottom: 7rem;
+
+        .header-contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 100%;
+            margin: 8rem 0;
+            align-items: center;
+
+            .connection {
+                text-align: right;
+                line-height: .5em;
+
+                .connection__tel {
+                    a {
+                        text-decoration: none;
+                        color: @primary-color-text;
+                        font-size: 1.875em;
+                        line-height: 1.5em;
+                        font-weight: bold;
+                        font-family: 'Open Sans', sans-serif;
+                    }
+                }
+
+                .connection__addr {
+                    p {
+                        font-size: 1.2em;
+                        color: @primary-color-text;
+                        font-family: 'Open Sans', sans-serif;
+                        font-weight: 500;
+                    }
+
+                }
+
+                .connection__btn {
+                    button {
+                        border-radius: 30px;
+                        border: 3px solid @btn-primary-color;
+                        padding: 1rem 1.5rem;
+                        color: @primary-color-text;
+                        font-size: 1em;
+                        background: transparent;
+                        font-weight: 600;
+                        transition: all 0.2s;
+                        outline: none;
+
+                        &:hover {
+                            background-color: @btn-primary-color;
+                            transform: scale(1.1);
+                            transition: all 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .header-title {
+            display: flex;
+            justify-content: center;
+
+            h1 {
+                color: @primary-color-text;
+                font-size: 4em;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 700;
+                text-align: center;
+
+                span {
+                    color: #FFC300;
+                }
+            }
+        }
+
+        .header-description {
+            display: flex;
+            justify-content: center;
+            margin: 8rem 0;
+
+            h2 {
+                color: @primary-color-text;
+                font-size: 1.8em;
+                font-family: 'Open Sans', sans-serif;
+                text-align: center;
+
+                span {
+                    color: #FFC300;
+                }
+            }
+        }
+
+        .header-form {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            input,
+            button {
+                min-height: 3em;
+                font-size: 1.125em;
+                padding: 1rem 2rem;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+                margin: 0 1rem;
+                border-radius: 10px;
+                border: none;
+
+                &::placeholder {
+                    color: @placeholder-color-form;
+                }
+
+                &:hover::placeholder {
+                    color: darken(@placeholder-color-form, 30%);
+                }
+            }
+
+            button {
+                background-color: lighten(@btn-primary-color, 10%);
+                outline: none;
+
+                &:hover {
+                    background-color: @btn-primary-color;
+                }
+            }
+        }
+
+    }
+
+
+    .tours {
+        margin-bottom: 5rem;
+
+        .tours-title {
+            font-family: @primary-color-text;
+            text-align: center;
+            margin: 5rem 0;
+
+            h2 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+        }
+
+        .tours-wrapp {
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+
+            .tours--wrapp-items {
+                max-width: 77.02%;
+
+                .tours-items {
+                    display: flex;
+                }
+            }
+
+            .tours-items--item {
+                position: relative;
+
+                .tours-items--item-info {
+                    position: absolute;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5));
+                    width: 98.4%;
+                    top: 3px;
+                    left: 3px;
+                    z-index: 1;
+                    padding: 1rem 0;
+                    color: #fff;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    color: @primary-color-text;
+                    font-family: "Open Sans";
+
+                    h4 {
+                        font-size: 1.5em;
+                    }
+
+                    p {
+                        font-size: 0.8em;
+                    }
+                }
+            }
+
+        }
+
+        .tours-wrapp--reverse {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+
+    .advantage {
+        .bg-img(0.3, '../../build/img/our-advantages.jpg');
+        display: flex;
+        justify-content: center;
+
+        .advantage-title {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            margin: 3rem 0;
+
+            h2 {
+                font-size: 2.5em;
+                font-family: 'Open Sans';
+                color: @primary-color-text;
+                font-weight: 600;
+            }
+        }
+
+        .wrapp-adv {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .advantage-items {
+                text-align: center;
+
+                .advantage-item {
+                    margin: 3rem 0;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    &:nth-child(1) {
+                        left: 1px;
+                    }
+
+                    &:nth-child(2) {
+                        left: 25px;
+                    }
+
+                    &:nth-child(3) {
+                        left: 50px;
+                    }
+
+                    &:nth-child(4) {
+                        left: 75px;
+                    }
+
+                    &:nth-child(5) {
+                        left: 100px;
+                    }
+
+                    &:nth-child(6) {
+                        left: 120px;
+                    }
+
+                    img {
+                        width: 75px;
+                        border-radius: 50%;
+                    }
+
+                    p {
+                        font-size: 1.2em;
+                        font-weight: 500;
+                        font-family: 'Open Sans';
+                        color: @primary-color-text;
+                        width: 50%;
+                        margin-left: 2rem;
+                        line-height: 1em;
+                        display: inline-block;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .services {
+        .bg-img(0, '../../build/img/bg-services1.jpg');
+        padding: 4rem 0;
+
+        .services-title {
+            text-align: center;
+            margin: 3rem 0 5rem 0;
+
+            h3 {
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+        }
+
+        .services-card {
+            margin: 1rem 0;
+        }
+
+        .card {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem 0;
+            font-family: "Open Sans";
+            box-shadow: 1px 1px 5px #000;
+            border-radius: 5px;
+
+            .card-img-top {
+                height: 50px;
+                width: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .card-body {
+                .card-title {
+                    font-size: 1em;
+                    text-align: center;
+                    font-weight: 600;
+                }
+
+                .card-text {
+                    font-size: 0.8em;
+                    text-align: center;
+                }
+            }
+
+        }
+
+        .services-btn {
+            text-align: center;
+            margin: 3rem 0;
+
+            button {
+                min-height: 3em;
+                font-size: 1.125em;
+                padding: 1rem 2rem;
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+                margin: 0 1rem;
+                border-radius: 10px;
+                border: none;
+                background-color: @btn-primary-color;
+                outline: none;
+
+                &:hover {
+                    background-color: lighten(@btn-primary-color, 10%);
+                }
+            }
+        }
+    }
+
+    .faq {
+        .faq-wrapp {
+            margin: 6rem;
+
+            #accordion {
+                .card {
+                    .card-body {
+                        font-size: .9em;
+                    }
+
+                    .btn-link {
+                        color: @secondary-color-text;
+                        font-size: 1.5em;
+                        text-decoration: none;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+
+                }
+            }
+        }
+    }
+
+    .footer {
+        .bg-img(0.1, '../../build/img/bg-footer.jpg');
+        padding: 3rem 0;
+
+        .footer-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            p {
+                margin: 0;
+                line-height: 1.2em;
+                color: @primary-color-text;
+            }
+        }
+
+        .footer-social {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.5rem;
+
+            a {
+                margin: 0 1rem;
+
+                img {
+                    width: 60px;
+                    border-radius: 55px;
+                }
+            }
+        }
+
+        .footer-bank-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 0.8rem;
+
+            p {
+                color: @primary-color-text;
+                margin-right: 2rem;
+            }
+
+            img {
+                height: 50px;
+
+            }
+        }
+    }
+}
